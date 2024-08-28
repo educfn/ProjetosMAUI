@@ -10,5 +10,13 @@
 			HorizontalOptions="Center"
 			Text="02"
 			VerticalOptions="Center" />
+		<Button
+			Clicked="OnButtonNextClicked"
+			HorizontalOptions="Center"
+			Text="Prosseguir" />
+		<Button
+			Clicked="OnButtonPreviousClicked"
+			HorizontalOptions="Center"
+			Text="Voltar" />
 	</VerticalStackLayout>
 </ContentPage>
