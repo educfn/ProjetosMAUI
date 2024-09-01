@@ -10,7 +10,11 @@
 		<pages:Menu />
 	</FlyoutPage.Flyout>
 	<FlyoutPage.Detail>
-		<!--  Pagina de coneudo central  -->
-		<pages:Page1 />
+		<!--  Pagina de conteudo central  -->
+		<NavigationPage>
+			<x:Arguments>
+				<pages:Page1 />
+			</x:Arguments>
+		</NavigationPage>
 	</FlyoutPage.Detail>
 </FlyoutPage>
