@@ -7,10 +7,10 @@
 	Title="FlyoutPageMenu">
 	<FlyoutPage.Flyout>
 		<!--  Pagina de Menu  -->
-		<pages:Menu/>
+		<pages:Menu />
 	</FlyoutPage.Flyout>
 	<FlyoutPage.Detail>
 		<!--  Pagina de coneudo central  -->
-		<pages:Page1/>
+		<pages:Page1 />
 	</FlyoutPage.Detail>
 </FlyoutPage>
