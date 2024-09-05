@@ -5,7 +5,7 @@ VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppNumeroDaSorte", "AppNumeroDaSorte\AppNumeroDaSorte.csproj", "{8AD93B62-D552-45EE-8A25-EF8C7282F051}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App01", "App01", "{FFC29F50-D17A-4A5E-AA41-AF2B9E62FE22}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App 01", "App 01", "{FFC29F50-D17A-4A5E-AA41-AF2B9E62FE22}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App 02", "App 02", "{EF06E498-3C7E-4974-B339-11E099B419F5}"
 EndProject
@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppNavigationPage", "AppNav
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppFlyoutPage", "AppFlyoutPage\AppFlyoutPage.csproj", "{31CD9CE7-560A-4C91-9641-46C8E9C8F050}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTabbedPage", "AppTabbedPage\AppTabbedPage.csproj", "{8ED52EB5-C76A-47DD-B659-94133CCF008A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppTabbedPage", "AppTabbedPage\AppTabbedPage.csproj", "{8ED52EB5-C76A-47DD-B659-94133CCF008A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
