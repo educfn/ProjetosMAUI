@@ -16,7 +16,7 @@
 				Clicked="CloseModal"
 				HorizontalOptions="End"
 				MinimumHeightRequest="31"
-				MinimunWidthRequest="31"
+				MinimumWidthRequest="31"
 				Text="X" />
 			<Entry Placeholder="Tarefa" />
 			<Editor Placeholder="Descrição" />
@@ -29,7 +29,7 @@
 					Clicked="AddStep"
 					HorizontalOptions="EndAndExpand"
 					MinimumHeightRequest="31"
-					MinimunWidthRequest="31"
+					MinimumWidthRequest="31"
 					Text="+" />
 			</StackLayout>
 			<Grid ColumnDefinitions="30, *, 30">
