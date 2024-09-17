@@ -26,7 +26,7 @@
 			</Border>
 			<Border StrokeShape="RoundRectangle 10">
 				<StackLayout>
-					<DatePicker x:Name="DatePicker_TaskDate"/>
+					<DatePicker x:Name="DatePicker_TaskDate" />
 				</StackLayout>
 			</Border>
 
