@@ -45,8 +45,8 @@ namespace AppTask
 #if ANDROID
                 //ANDROID
                 handler.PlatformView.BackgroundTintList = Android.Content.Res.ColorStateList.ValueOf(Colors.Transparent.ToPlatform());
-#elif IOS || MACCATALYST
-                //iOS || MACCATALYST
+#elif IOS
+                //iOS
                 handler.PlatformView.BorderStyle = UIKit.UITextBorderStyle.None;
 #elif WINDOWS
                 //WINDOWS - Não funciona 100%
