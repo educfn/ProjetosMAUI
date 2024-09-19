@@ -13,6 +13,11 @@ namespace AppTask.Database
         public DbSet<TaskModel> Tasks { get; set; }
         public DbSet<SubTaskModel> SubTasks { get; set; }
 
+        public AppTaskContext()
+        {
+            Database.Migrate();
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
