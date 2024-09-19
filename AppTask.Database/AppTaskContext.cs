@@ -16,6 +16,7 @@ namespace AppTask.Database
         public AppTaskContext()
         {
             Database.Migrate();
+            ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
