@@ -1,3 +1,4 @@
+using AppTask.Models;
 using AppTask.Repositories;
 
 namespace AppTask.Views;
@@ -22,7 +23,7 @@ public partial class StartPage : ContentPage
 		LblEmptyText.IsVisible = tasks.Count <= 0;
 	}
 
-    private void Button_Clicked(object sender, EventArgs e)
+    private void OnButtonClickedToAdd(object sender, EventArgs e)
     {
 		_repository.Add(new Models.TaskModel
 		{
@@ -37,8 +38,20 @@ public partial class StartPage : ContentPage
 		//Navigation.PushModalAsync(new AddEditTaskPage());
     }
 
-	private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+	private void OnBorderClickedToFocusEntry(object sender, EventArgs e)
     {
 		Entry_Search.Focus();
+    }
+
+    private async void OnImageClickedToDelete(System.Object sender, Microsoft.Maui.Controls.TappedEventArgs e)
+    {
+		var task = (TaskModel)e.Parameter;
+		var confirm = await DisplayAlert("Confirm a exclusão!",$"Tem certeza de que deseja excluir essa tarefa: {task.Name}?", "Sim", "Não");
+
+		if (confirm)
+		{
+			_repository.Delete(task);
+			LoadData();
+		}
     }
 }
