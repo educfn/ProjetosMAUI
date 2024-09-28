@@ -10,7 +10,6 @@ namespace AppTask.Models
         public DateTime PrevisionDate { get; set; }
         private bool _isCompleted;
 
-
         public bool IsCompleted 
         {
             get 
