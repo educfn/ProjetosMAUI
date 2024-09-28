@@ -9,6 +9,8 @@ public partial class AddEditTaskPage : ContentPage
 	{
 		InitializeComponent();
 		_task = new TaskModel();
+
+		BindableLayout.SetItemsSource(BindableLayout_Steps, _task.SubTasks);
 	}
 
     private void CloseModal(object sender, EventArgs e)
