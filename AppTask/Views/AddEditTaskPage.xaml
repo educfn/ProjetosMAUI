@@ -62,7 +62,11 @@
 								<Image
 									Grid.Column="2"
 									Source="trash.png"
-									WidthRequest="25" />
+									WidthRequest="25">
+									<Image.GestureRecognizers>
+										<TapGestureRecognizer CommandParameter="{Binding .}" Tapped="OnTapToDelete" />
+									</Image.GestureRecognizers>
+								</Image>
 							</Grid>
 						</DataTemplate>
 					</BindableLayout.ItemTemplate>
