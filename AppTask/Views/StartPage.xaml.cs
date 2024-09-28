@@ -54,4 +54,11 @@ public partial class StartPage : ContentPage
 			LoadData();
 		}
     }
+
+    private void OnCheckBoxClickedToComplete(System.Object sender, Microsoft.Maui.Controls.TappedEventArgs e)
+    {
+		var task = (TaskModel)e.Parameter;
+		task.IsCompleted = ((CheckBox)sender).IsChecked;
+		_repository.Update(task);
+    }
 }
