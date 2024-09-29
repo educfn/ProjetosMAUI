@@ -49,7 +49,7 @@ public partial class AddEditTaskPage : ContentPage
 	private bool ValidateData()
 	{
         Label_TaskName_Required.IsVisible = false;
-        Label_TaskName_Required.IsVisible = false;
+        Label_TaskDescription_Required.IsVisible = false;
 
 
         bool validResult = true;
@@ -60,7 +60,7 @@ public partial class AddEditTaskPage : ContentPage
 		}
 		if (string.IsNullOrWhiteSpace(_task.Description))
 		{
-            Label_TaskName_Required.IsVisible = true;
+            Label_TaskDescription_Required.IsVisible = true;
             validResult = false;
 		}
 
