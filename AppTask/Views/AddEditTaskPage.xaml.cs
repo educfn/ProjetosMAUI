@@ -18,6 +18,11 @@ public partial class AddEditTaskPage : ContentPage
 	}
 
     private void CloseModal(object sender, EventArgs e)
+    {
+        Navigation.PopModalAsync();
+    }
+
+    private void SaveData(object sender, EventArgs e)
 	{
 		//Obter os dados
 		GetDataFromForm();
@@ -25,18 +30,21 @@ public partial class AddEditTaskPage : ContentPage
 		bool valid = ValidateData();
 		//Salvar os dados
 		if (valid)
+		{
 			SaveInDatabase();
-		//Fechar a tela
-		Navigation.PopModalAsync();
+			//Fechar a tela
+			Navigation.PopModalAsync();
 
-		//Solicitar a atualização da listagem da tela anterior.
-		UpdateListInStartPage();
+			//Solicitar a atualização da listagem da tela anterior.
+			UpdateListInStartPage();
+		}
 	}
 
-	private void GetDataFromForm()
+
+    private void GetDataFromForm()
 	{
 		_task.Name = Entry_TaskName.Text;
-		_task.Name = Editor_TaskDescription.Text;
+		_task.Description = Editor_TaskDescription.Text;
 		_task.PrevisionDate = DatePicker_TaskDate.Date;
 		_task.PrevisionDate = _task.PrevisionDate.AddHours(23);
 		_task.PrevisionDate = _task.PrevisionDate.AddMinutes(59);
