@@ -26,12 +26,24 @@
 				<Border StrokeShape="RoundRectangle 10">
 					<Entry x:Name="Entry_TaskName" Placeholder="Tarefa" />
 				</Border>
+				<Label
+					x:Name="Label_TaskName_Required"
+					Margin="0,-7,0,5"
+					IsVisible="false"
+					Text="O campo é obrigatório!"
+					TextColor="Red" />
 				<Border StrokeShape="RoundRectangle 10">
 					<Editor
 						x:Name="Editor_TaskDescription"
 						HeightRequest="150"
 						Placeholder="Descrição" />
 				</Border>
+				<Label
+					x:Name="Label_TaskDescription_Required"
+					Margin="0,-7,0,5"
+					IsVisible="false"
+					Text="O campo é obrigatório!"
+					TextColor="Red" />
 				<Border StrokeShape="RoundRectangle 10">
 					<StackLayout>
 						<DatePicker x:Name="DatePicker_TaskDate" />

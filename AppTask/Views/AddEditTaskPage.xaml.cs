@@ -1,4 +1,5 @@
 using AppTask.Models;
+using System.Text;
 
 namespace AppTask.Views;
 
@@ -18,7 +19,7 @@ public partial class AddEditTaskPage : ContentPage
 		//Obter os dados
 		GetDataFromForm();
 		//Validar os dados
-
+		ValidateData();
 		//Salvar os dados
 
 		//Fechar a tela
@@ -38,6 +39,27 @@ public partial class AddEditTaskPage : ContentPage
 
 		_task.Created = DateTime.Now;
 		_task.IsCompleted = false;
+	}
+
+	private bool ValidateData()
+	{
+        Label_TaskName_Required.IsVisible = false;
+        Label_TaskName_Required.IsVisible = false;
+
+
+        bool validResult = true;
+		if (string.IsNullOrWhiteSpace(_task.Name))
+		{
+			Label_TaskName_Required.IsVisible = true;
+			validResult = false;
+		}
+		if (string.IsNullOrWhiteSpace(_task.Description))
+		{
+            Label_TaskName_Required.IsVisible = true;
+            validResult = false;
+		}
+
+		return validResult;
 	}
 
     private void SaveData(object sender, EventArgs e)
