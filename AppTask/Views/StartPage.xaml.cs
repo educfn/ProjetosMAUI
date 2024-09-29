@@ -48,8 +48,13 @@ public partial class StartPage : ContentPage
 
     private void OnCheckBoxClickedToComplete(System.Object sender, Microsoft.Maui.Controls.TappedEventArgs e)
     {
+		var checkBox = ((CheckBox)sender);
 		var task = (TaskModel)e.Parameter;
-		task.IsCompleted = ((CheckBox)sender).IsChecked;
+
+		if (DeviceInfo.Platform != DevicePlatform.WinUI)
+			checkBox.IsChecked = !checkBox.IsChecked;
+
+		task.IsCompleted = checkBox.IsChecked;
 		_repository.Update(task);
     }
 
