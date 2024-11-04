@@ -7,7 +7,14 @@
 	<VerticalStackLayout>
 		<Label
 			HorizontalOptions="Center"
-			Text="Menu"
+			Text="NET MAUI - Gallery"
 			VerticalOptions="Center" />
+		<Label Text="Inicio"/>
+		<Label Text="Extra" />
+		<Label Text="Créditos" />
+		
+		<Label Text="Layout" />
+		<Label Text="StackLayout" />
+		<Label Text="bla bla bla bla...." />
 	</VerticalStackLayout>
 </ContentPage>
