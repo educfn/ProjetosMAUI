@@ -14,7 +14,9 @@
 			FontSize="24"
 			FontFamily="OpenSansSemibold"
 			VerticalOptions="Center" />
-		<Label Text="Inicio"/>
+		<Label Text="Inicio">
+
+		</Label>
 		<Label Text="Extra" />
 		<Label Text="Créditos" />
 
