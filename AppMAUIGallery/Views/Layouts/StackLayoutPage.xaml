@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppMAUIGallery.Views.Layouts.StackLayoutPage"
-             Title="StackLayoutPage">
-    <VerticalStackLayout>
-        <Label 
-			Margin="20"
-            Text="Página do StackLayout"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+<ContentPage
+	x:Class="AppMAUIGallery.Views.Layouts.StackLayoutPage"
+	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	Title="StackLayoutPage">
+	<StackLayout Orientation="Vertical">
+		<Label Text="Olá mundo!" />
+		<Button
+			HeightRequest="100"
+			HorizontalOptions="Center"
+			Text="Olá mundo!"
+			WidthRequest="200" />
+		<StackLayout Orientation="Horizontal">
+			<Button HorizontalOptions="Start" Text="Olá mundo!" />
+			<Button HorizontalOptions="Start" Text="Olá mundo!" />
+		</StackLayout>
+	</StackLayout>
 </ContentPage>
