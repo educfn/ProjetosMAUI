@@ -13,17 +13,21 @@ public partial class Menu : ContentPage
 		{
 			var lblCategory = new Label();
 			lblCategory.Text = category.Name;
+			lblCategory.FontFamily = "OpenSansSemiBold";
 
 			MenuContainer.Children.Add(lblCategory);
 			foreach (var component in category.Components)
 			{
 				var lblComponentTitle = new Label();
 				lblComponentTitle.Text = component.Title;
+                lblComponentTitle.FontFamily = "OpenSansSemiBold";
+                lblComponentTitle.Margin = new Thickness(20, 20, 0, 0);
 
-				var lblComponentDescription = new Label();
+                var lblComponentDescription = new Label();
 				lblComponentDescription.Text = component.Description;
+                lblComponentDescription.Margin = new Thickness(20, 0, 0, 0);
 
-				MenuContainer.Children.Add(lblComponentTitle);
+                MenuContainer.Children.Add(lblComponentTitle);
 				MenuContainer.Children.Add(lblComponentDescription);
 			}
 		}
