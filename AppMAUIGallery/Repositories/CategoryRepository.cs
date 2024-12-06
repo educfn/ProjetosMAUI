@@ -25,6 +25,13 @@ namespace AppMAUIGallery.Repositories
                         Description = "Organização sequencial dos elementos.", 
                         Page = typeof(StackLayoutPage)
                     } 
+                    new Component 
+                    { 
+                        Title = "Grid", 
+                        Description = "Organização os elementos dentro de uma tabela.", 
+                        Page = typeof(GridLayoutPage)
+                    } 
+
                 }
             });
 
