@@ -15,7 +15,9 @@
 			FontFamily="OpenSansSemibold"
 			VerticalOptions="Center" />
 		<Label Text="Inicio">
-
+			<Label.GestureRecognizers>
+				<TapGestureRecognizer Tapped="OnTapInicio"/>
+			</Label.GestureRecognizers>
 		</Label>
 		<Label Text="Extra" />
 		<Label Text="Créditos" />
