@@ -4,7 +4,16 @@
 	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	Title="GridLayoutPage">
-	<Grid BackgroundColor="AliceBlue">
+	<Grid
+		Margin="20"
+		Padding="1"
+		BackgroundColor="Black"
+		ColumnDefinitions="6*, Auto, 2*, 2*"
+		ColumnSpacing="1"
+		RowDefinitions="50, 100, 10"
+		RowSpacing="1">
+		<!--
+		Definindo de maneira verbosa.
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width="6*" />
 			<ColumnDefinition Width="Auto" />
@@ -16,6 +25,7 @@
 			<RowDefinition Height="100" />
 			<RowDefinition Height="10" />
 		</Grid.RowDefinitions>
+		-->
 
 		<BoxView Color="MediumAquamarine" />
 		<Label
@@ -52,6 +62,6 @@
 		<BoxView
 			Grid.Row="2"
 			Grid.ColumnSpan="4"
-			Color="Black" />
+			Color="White" />
 	</Grid>
 </ContentPage>
