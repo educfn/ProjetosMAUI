@@ -6,18 +6,52 @@
 	Title="GridLayoutPage">
 	<Grid BackgroundColor="AliceBlue">
 		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="100" />
+			<ColumnDefinition Width="6*" />
 			<ColumnDefinition Width="Auto" />
 			<ColumnDefinition Width="2*" />
-			<ColumnDefinition Width="1*" />
+			<ColumnDefinition Width="2*" />
 		</Grid.ColumnDefinitions>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="50" />
 			<RowDefinition Height="100" />
-			<RowDefinition Height="Auto" />
+			<RowDefinition Height="10" />
 		</Grid.RowDefinitions>
 
 		<BoxView Color="MediumAquamarine" />
-		<Label Text="Olá Mundo!" />
+		<Label
+			HorizontalOptions="Center"
+			Text="Olá Mundo!"
+			VerticalOptions="Center" />
+
+		<BoxView
+			Grid.Row="0"
+			Grid.Column="1"
+			WidthRequest="50"
+			Color="ForestGreen" />
+		<BoxView
+			Grid.RowSpan="2"
+			Grid.Column="2"
+			Grid.ColumnSpan="2"
+			Color="DarkGreen" />
+
+		<Label
+			Grid.RowSpan="2"
+			Grid.Column="2"
+			Grid.ColumnSpan="2"
+			HorizontalOptions="Center"
+			Text="Olá Mundo!"
+			TextColor="White"
+			VerticalOptions="Center" />
+
+		<BoxView Grid.Row="1" Color="Orange" />
+		<BoxView
+			Grid.Row="1"
+			Grid.Column="1"
+			Color="Red" />
+
+		<BoxView
+			Grid.Row="2"
+			Grid.ColumnSpan="4"
+			Color="Black" />
 	</Grid>
 </ContentPage>
