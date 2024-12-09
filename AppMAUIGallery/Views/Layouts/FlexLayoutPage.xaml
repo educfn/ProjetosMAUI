@@ -5,9 +5,11 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	Title="FlexLayoutPage">
 	<FlexLayout
+		AlignContent="SpaceEvenly"
 		AlignItems="Start"
 		Direction="Row"
-		JustifyContent="Start">
+		JustifyContent="Start"
+		Wrap="Wrap">
 		<Label
 			Padding="10"
 			BackgroundColor="RosyBrown"
