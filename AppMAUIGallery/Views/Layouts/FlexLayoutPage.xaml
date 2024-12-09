@@ -4,7 +4,7 @@
 	xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	Title="FlexLayoutPage">
-	<FlexLayout Direction="Column" AlignItems="Start">
+	<FlexLayout Direction="Column" AlignItems="Start" JustifyContent="SpaceEvenly">
 		<Label Text="Linha 1" Padding="10" BackgroundColor="RosyBrown" />
 		<Label Text="Linha 2" FlexLayout.AlignSelf="Center" Padding="10" BackgroundColor="SandyBrown" />
 		<Label Text="Linha 3" FlexLayout.AlignSelf="End" Padding="10" BackgroundColor="SaddleBrown" />
