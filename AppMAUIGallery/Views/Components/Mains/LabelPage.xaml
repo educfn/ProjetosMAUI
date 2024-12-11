@@ -6,13 +6,41 @@
 	Title="LabelPage">
 	<VerticalStackLayout>
 		<Label
+			Padding="10"
+			BackgroundColor="Gray"
+			HorizontalOptions="FillAndExpand"
+			HorizontalTextAlignment="Center"
+			Text="TEXT" />
+		<Label
+			Padding="10"
 			Text="Welcome to .NET MAUI!"
 			TextColor="#FF0000"
 			TextDecorations="Underline"
 			TextTransform="Lowercase" />
-		<Label Text="Bem-vindo ao &#34;.NET MAUI&#34;! &lt;i&gt; Você está gostando do MAUI?&lt;/i&gt;" TextType="Html" />
 
-		<Label TextType="Html">
+		<Label
+			Padding="10"
+			FontAttributes="Italic"
+			FontFamily="OpenSansSemibold"
+			FontSize="20"
+			Text="Bem vindo ao .NET MAUI!" />
+
+		<Label
+			Padding="10"
+			BackgroundColor="Gray"
+			HorizontalOptions="FillAndExpand"
+			HorizontalTextAlignment="Center"
+			Text="HTML" />
+		<Label
+			Padding="10"
+			BackgroundColor="LightGray"
+			Text="Bem-vindo ao &#34;.NET MAUI&#34;! &lt;i&gt; Você está gostando do MAUI?&lt;/i&gt;"
+			TextType="Html" />
+
+		<Label
+			Padding="10"
+			BackgroundColor="LightGray"
+			TextType="Html">
 			<Label.Text>
 				<![CDATA[
 				<i>Olá mundo!</i> <br /> <strong>Como vai você? </strong>
