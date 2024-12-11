@@ -18,12 +18,24 @@
 			TextDecorations="Underline"
 			TextTransform="Lowercase" />
 
-		<Label Text="Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker."
-			   MaxLines="2"
-			   LineHeight="1"
-			   LineBreakMode="TailTruncation"
-			   />
+		<Label
+			LineBreakMode="TailTruncation"
+			LineHeight="1"
+			MaxLines="2"
+			Text="Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker." />
 
+		<Label>
+			<Label.FormattedText>
+				<FormattedString>
+					<Span
+						FontAttributes="Bold"
+						Text="Lorem Ipsum"
+						TextColor="Blue"
+						TextDecorations="Underline" />
+					<Span FontAttributes="Italic" Text="é simplesmente uma simulação de texto da indústria tipográfica e de impressos" />
+				</FormattedString>
+			</Label.FormattedText>
+		</Label>
 		<Label
 			Padding="10"
 			FontAttributes="Italic"
