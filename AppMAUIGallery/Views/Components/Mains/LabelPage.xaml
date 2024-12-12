@@ -24,7 +24,17 @@
 			MaxLines="2"
 			Text="Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker." />
 
-		<Label Text=".NET MAUI" HeightRequest="150" VerticalTextAlignment="Center" Padding="10" FontSize="20" FontAttributes="Bold" VerticalOptions="FillAndExpand" BackgroundColor="#F2F2F2" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"/>
+		<Label
+			Padding="10"
+			BackgroundColor="#F2F2F2"
+			FontAttributes="Bold"
+			FontSize="20"
+			HeightRequest="150"
+			HorizontalOptions="FillAndExpand"
+			HorizontalTextAlignment="Center"
+			Text=".NET MAUI"
+			VerticalOptions="FillAndExpand"
+			VerticalTextAlignment="Center" />
 		<Label>
 			<Label.FormattedText>
 				<FormattedString>
