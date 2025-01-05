@@ -5,7 +5,13 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	Title="ImagePage">
 	<VerticalStackLayout>
+		<Image
+			x:Name="Imagem01"
+			Aspect="Center"
+			BackgroundColor="Gray"
+			IsAnimationPlaying="True"
+			IsOpaque="True"
+			Source="https://wallpapercave.com/wp/wp3023778.jpg" />
 		<Image Source="dotnet_bot.png" />
-		<Image Aspect="Center" Source="https://wallpapercave.com/wp/wp3023778.jpg" />
 	</VerticalStackLayout>
 </ContentPage>
